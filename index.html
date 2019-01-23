@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="app.css">
+  <body>
+
+    J'utilise node.js ; <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    et Electron <script>document.write(process.versions.electron)</script>.
+    <!doctype html>
+
+    </head>
+    
+    <body>
+      <h1>TEST</h1>
+    
+      <section>
+        <h1>Géréner un nombre aléatoire</h1>
+    
+        <div>
+          Valeur =
+          <span id="random-result"></span>
+        </div>
+        <button id="random-button" type="button">Générer</button>
+      </section>
+    
+      <button id="app-close" type="button">Fermer l'application</button>
+    
+      <script src="app.js"></script>
+    </body>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
